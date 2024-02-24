@@ -1,0 +1,30 @@
+{
+	"name": "${localWorkspaceFolderBasename}",
+	"build": {
+		"dockerfile": "../Dockerfile" // 相対パス表記
+	},
+	"workspaceFolder": "/workspaces/php8+postgresql_v2/src/",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+				"installZsh": "true",
+				"username": "vscode",
+				"userUid": "1000",
+				"userGid": "1000",
+				"upgradePackages": "true"
+		}
+},
+	"customizations": {
+			"vscode": {
+					"extensions": [
+						"ms-azuretools.vscode-docker",
+						"mosapride.zenkaku",
+						"oderwat.indent-rainbow",
+						"bmewburn.vscode-intelephense-client",
+						"xdebug.php-debug",
+						"neilbrayfield.php-docblocker",
+						"PKief.material-icon-theme"
+					]
+			}
+	},
+	"forwardPorts": []
+}
